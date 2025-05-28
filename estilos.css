@@ -1,0 +1,131 @@
+margin{ 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f7, #d9e2ec);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 20px 0;
+  color: #0077b6;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Seções */
+section {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário */
+.formulario {
+  flex: 1;
+  min-width: 320px;
+  max-width: 400px;
+}
+
+.formulario h2 {
+  margin-bottom: 15px;
+  color: #023e8a;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+/* Botões */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #023e8a;
+}
+
+button.fechar {
+  background-color: #e63946;
+}
+
+button.fechar:hover {
+  background-color: #a4161a;
+}
+
+/* Área de saída */
+.saida {
+  flex: 1;
+  min-width: 320px;
+  max-width: 600px;
+}
+
+.saida h2 {
+  margin-bottom: 10px;
+  color: #023e8a;
+}
+
+pre {
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-height: 600px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .saida, .formulario {
+    max-width: 90%;
+  }
+}
